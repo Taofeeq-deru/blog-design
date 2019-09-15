@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lucis design</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="icons">
+            <ul>
+                <li><i class="fa fa-home fa-lg"></i></li>
+                <li><i class="fa fa-archive fa-lg"></i></li>
+                <li class="drop"><i class="fa fa-caret-down dropbt" id="mydropbt"></i>
+                    <div class="drop-content" id="mydrop">
+                        <a href="#">Home</a>
+                        <a href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="layout">
+            <div class="dropdown">
+                <i class="fa fa-bars dropbtn" id="mydropbtn"></i>
+                <div class="dropdown-content" id="mydropdown">
+                    <img src="https://res.cloudinary.com/taofeeq/image/upload/v1568543263/slack.hng/PicsArt_09-20-09.09.17_duvlmn.jpg" alt="profile picture">
+                    <h1>taofeeq oluderu</h1>
+                    <p>A Front End Developer</p>
+                    <h2><a href="#">posts</a></h2>
+                    <h2><a href="#">thoughts</a></h2>
+                    <h2><a href="#">contacts</a></h2>
+                <br> <a href="#"><button>follow me</button></a>
+                    <pre> <b>5                15</b>
+    <t class="grey"><a href="#">Followers</a>    <a href="#">Following</a></t>
+                    </pre>
+                    <p class="grey"><i class="fa fa-archive"></i> &nbsp; Powered by Lucid</p>
+                </div>
+            </div>
+            <div id="profile">
+                    <img src="https://res.cloudinary.com/taofeeq/image/upload/v1568543263/slack.hng/PicsArt_09-20-09.09.17_duvlmn.jpg" alt="profile picture">
+                    <h1>taofeeq oluderu</h1>
+                    <p>A Front End Developer</p>
+                    <h2><a href="#">posts</a></h2>
+                    <h2><a href="#">thoughts</a></h2>
+                    <h2><a href="#">contacts</a></h2>
+                <br> <a href="#"><button>follow me</button></a>
+                    <pre> <b>5                15</b>
+    <t class="grey"><a href="#">Followers</a>    <a href="#">Following</a></t>
+                    </pre>
+                    <p class="grey"><i class="fa fa-archive"></i> &nbsp; Powered by Lucid</p>
+            </div>
+            <div id="posts">
+                <p>Aug 26th, 2019 05:00PM</p>
+                <h1>evaluating startup ideas</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus hic enim harum fuga? 
+                    Odit magni rerum natus eaque consectetur, fugit necessitatibus sequi ullam dolorum 
+                    aut debitis perferendis saepe cum possimus!
+                </p>
+                <ul>
+                    <a href="#"><li><i class="fa fa-retweet"></i></li></a>
+                    <a href="#"><li><i class="fa fa-heart-o"></i></li></a>
+                    <a href="#"><li><i class="fa fa-comment-o"></i></li></a>
+                </ul> <br>
+                <p>Aug 26th, 2019 05:00PM</p>
+                <h1>evaluating startup ideas</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus hic enim harum fuga? 
+                    Odit magni rerum natus eaque consectetur, fugit necessitatibus sequi ullam dolorum 
+                    aut debitis perferendis saepe cum possimus!
+                </p>
+                <ul>
+                    <a href="#"><li><i class="fa fa-retweet"></i></li></a>
+                    <a href="#"><li><i class="fa fa-heart-o"></i></li></a>
+                    <a href="#"><li><i class="fa fa-comment-o"></i></li></a>
+                </ul> <br>
+                <p>Aug 26th, 2019 05:00PM</p>
+                <h1>evaluating startup ideas</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus hic enim harum fuga? 
+                    Odit magni rerum natus eaque consectetur, fugit necessitatibus sequi ullam dolorum 
+                    aut debitis perferendis saepe cum possimus!
+                </p>
+                <ul>
+                    <a href="#"><li><i class="fa fa-retweet"></i></li></a>
+                    <a href="#"><li><i class="fa fa-heart-o"></i></li></a>
+                    <a href="#"><li><i class="fa fa-comment-o"></i></li></a>
+                </ul> <br>
+                <p>Aug 26th, 2019 05:00PM</p>
+                <h1>evaluating startup ideas</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus hic enim harum fuga? 
+                    Odit magni rerum natus eaque consectetur, fugit necessitatibus sequi ullam dolorum 
+                    aut debitis perferendis saepe cum possimus!
+                </p>
+                <ul>
+                    <a href="#"><li><i class="fa fa-retweet"></i></li></a>
+                    <a href="#"><li><i class="fa fa-heart-o"></i></li></a>
+                    <a href="#"><li><i class="fa fa-comment-o"></i></li></a>
+                </ul> <br>
+            </div>
+        </div>
+    </div>
+    <script>
+        var navDrop = document.getElementById("mydropbt"); //to access the dropbutton in navigation
+        navDrop.addEventListener("click", myFunction); //creating function to run when the dropbutton is clicked
+        function myFunction() { //When the user clicks on the dropbutton, toggle between hiding and showing the dropdown content
+            document.getElementById("mydrop").classList.toggle("show");
+        }
+        window.addEventListener("click", function(event) { //Close the dropdown menu if the user clicks outside of it
+            if (!event.target.matches(".dropbt")) {
+                var drop = document.getElementsByClassName("drop-content");
+                var i;
+                for (i = 0; i < drop.length; i++) {
+                    var openDrop = drop[i];
+                    if (openDrop.classList.contains('show')) {
+                        openDrop.classList.remove('show');
+                    }
+                }
+            }
+        })
+        var navDrop = document.getElementById("mydropbtn"); //to access the dropbutton that shows profile
+        navDrop.addEventListener("click", thisFunction); //creating function to run when the dropbutton is clicked
+        function thisFunction() { //When the user clicks on the dropbutton, toggle between hiding and showing the dropdown content (profile)
+            document.getElementById("mydropdown").classList.toggle("showdrop");
+            document.getElementById("posts").style.opacity = 0.2 //to make the posts opaque when the profile dropbutton is clicked
+        }
+        window.addEventListener("click", function(e) { //Close the profile menu if the user clicks outside of it
+            if (!e.target.matches(".dropbtn")) {
+                var dropdown = document.getElementsByClassName("dropdown-content");
+                var b;
+                for (b = 0; b < dropdown.length; b++) {
+                    var openDropdown = dropdown[b];
+                    if (openDropdown.classList.contains('showdrop')) {
+                        openDropdown.classList.remove('showdrop');
+                    }
+                    document.getElementById("posts").style.opacity = 1; //to make the posts show back
+                }
+            }
+        })
+    </script>
+</body>
+</html>
